@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tuyển Sinh</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h3 style="text-align: center">Quản lý tuyển sinh</h3>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Điểm chuẩn</span>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Nhập điểm chuẩn"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+          id="diemChuan"
+        />
+      </div>
+
+      <div class="form-group">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">Điểm Toán</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+            id="diemToan"
+          />
+          <div class="input-group-prepend">
+            <span class="input-group-text">Điểm Lý</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+            id="diemLy"
+          />
+          <div class="input-group-prepend">
+            <span class="input-group-text">Điểm Hóa</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder=""
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+            id="diemHoa"
+          />
+        </div>
+      </div>
+      <div class="input-group mb-3">
+        <select class="custom-select" id="khuVuc" style="margin-right: 20px">
+          <option selected>Chọn khu vực</option>
+          <option value="0">X (Không thuộc khu vực ưu tiên)</option>
+          <option value="2">A</option>
+          <option value="1">B</option>
+          <option value="0.5">C</option>
+        </select>
+        <select class="custom-select" id="doiTuong">
+          <option selected>Chọn đối tượng</option>
+          <option value="0">0 (Không thuộc đối tượng ưu tiên)</option>
+          <option value="2.5">1</option>
+          <option value="1.5">2</option>
+          <option value="1">3</option>
+        </select>
+      </div>
+      <div style="display: flex; justify-content: center">
+        <button onclick="tinhDiem()" class="btn btn-success">Tính điểm</button>
+      </div>
+      <div id="showKetQua" style="display: none; margin: 20px">
+        <p>
+          Bạn đã: <span id="ketQua"></span> tuyển sinh. Tổng điểm của bạn là:
+          <span id="tongDiem"></span>
+        </p>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./tuyenSinh.js"></script>
+  </body>
+</html>
