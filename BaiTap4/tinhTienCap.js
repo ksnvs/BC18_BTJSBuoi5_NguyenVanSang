@@ -42,7 +42,6 @@ function tinhTienCap() {
   document.getElementById("tongTienCap").innerText =
     tongTienPhi.toLocaleString() + "$";
   document.getElementById("tongTienCap").style.fontWeight = "bold";
-  console.log({ tongTienPhi });
 }
 
 function kiemTraMaKH(MaKH) {
